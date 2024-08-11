@@ -10,7 +10,7 @@ export const Navbar = () => {
     await signOut(auth);
   };
   return (
-    <div className="bg-red-400 flex justify-end text-3xl text-white p-2">
+    <div className="bg-red-400 flex justify-end text-sm text-white p-2 sm:text-2xl w-full">
       <Link to="/" className="mr-5 underline hover:no-underline">
         Home{" "}
       </Link>{" "}
@@ -35,7 +35,7 @@ export const Navbar = () => {
             />
             <button
               onClick={signUserOut}
-              className="mr-2 text-2xl text-black hover:bg-red-200 border rounded-md p-1"
+              className="mr-2 text-sm sm:text-xl text-black hover:bg-red-200 border rounded-md p-1"
             >
               Log out -
             </button>
